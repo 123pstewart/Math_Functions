@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>JS Practice Pages</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="m-4">Write a function to make this page functional</h4>
+
+      <div class="row text-center">
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum1" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <h2>X</h2>
+        </div>
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum2" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="multiplyNumbers()"
+          >
+            <h2>=</h2>
+          </button>
+        </div>
+        <div class="col-2">
+          <h2 id="multiplyAnswer">?</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum3" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <h2>/</h2>
+        </div>
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum4" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="divideNumbers()"
+          >
+            <h2>=</h2>
+          </button>
+        </div>
+        <div class="col-2">
+          <h2 id="divideAnswer">?</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum5" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <h2>+</h2>
+        </div>
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum6" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="addNumbers()"
+          >
+            <h2>=</h2>
+          </button>
+        </div>
+        <div class="col-2">
+          <h2 id="addAnswer">?</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum7" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <h2>-</h2>
+        </div>
+        <div class="col-3 m-auto">
+          <input type="number" id="inputNum8" class="form-control" />
+        </div>
+        <div class="col-2 m-auto">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            onclick="subtractNumbers()"
+          >
+            <h2>=</h2>
+          </button>
+        </div>
+        <div class="col-2">
+          <h2 id="subtractAnswer">?</h2>
+        </div>
+      </div>
+    </div>
+    <script>
+      function multiplyNumbers() {
+        var val = document.getElementById("inputNum1").value;
+        var vall = document.getElementById("inputNum2").value;
+        var ans = val * vall;
+        document.getElementById("multiplyAnswer").innerHTML = ans;
+      }
+      function divideNumbers() {
+        var valr = document.getElementById("inputNum3").value;
+        var vallr = document.getElementById("inputNum4").value;
+        var ansr = valr / vallr;
+        document.getElementById("divideAnswer").innerHTML = ansr;
+      }
+      function addNumbers() {
+        var valw = document.getElementById("inputNum5").value;
+        var vallw = document.getElementById("inputNum6").value;
+        var answ = parseint(valw, vallw);
+        document.getElementById("addAnswer").innerHTML = answ;
+      }
+      function subtractNumbers() {
+        var valu = document.getElementById("inputNum7").value;
+        var vallu = document.getElementById("inputNum8").value;
+        var ansu = valu - vallu;
+        document.getElementById("subtractAnswer").innerHTML = ansu;
+      }
+      divFunction();
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
